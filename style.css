@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    background-color:#061735;
+    font-family: 'Orbitron';
+}
+
+.container {
+    width: 25%;
+    margin: auto;
+    padding: 30px;
+    margin-top: 202px;
+    background-color:#797878;
+    border-radius: 10px;
+    box-sizing: border-box;
+    min-width: 532px;
+}
+
+.display-container {
+    height: 64px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 12px 0px 0px 0px;
+    margin-bottom: 10px;
+}
+
+#display {
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color:#d5d5d5;
+    background-color: #111;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px black;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.keypad-container {
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+.keypad-container div {
+    height: 48px;
+    display: table;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px black;
+    user-select: none;
+}
+
+.keypad-container div span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#clear {
+    grid-row: 1;
+    grid-column: 1/4;
+    background-color:#d00e04;
+    color:white;
+}
+
+#clear:hover {
+    background-color: #f30c00;
+}
+
+.key-color {
+    background-color: #bbb;
+}
+
+.key-color:hover {
+    background-color: #e6e6e6;
+}
+
+#equals {
+    grid-column: 3/5;
+}
