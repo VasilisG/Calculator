@@ -63,6 +63,9 @@ function evaluateExpression(exp){
             finalResult += newArr[i];
         }
     }
+    if(finalResult.toString().indexOf('.') != -1){
+        finalResult = finalResult.toFixed(2);
+    }
     return finalResult;
 }
 
