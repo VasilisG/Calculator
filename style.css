@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
+html {
+    height: 100%;
+}
+
 body {
     background-color:#061735;
     font-family: 'Orbitron';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
 }
 
 .container {
     width: 25%;
-    margin: auto;
     padding: 30px;
-    margin-top: 202px;
     background-color:#797878;
     border-radius: 10px;
     box-sizing: border-box;
@@ -56,6 +63,7 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 5px 1px black;
     user-select: none;
+    cursor: pointer;
 }
 
 .keypad-container div span {
@@ -84,4 +92,10 @@ body {
 
 #equals {
     grid-column: 3/5;
+}
+
+@media only screen and (max-width:532px) {
+    .container {
+        min-width: 100%;
+    }
 }
